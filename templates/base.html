@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kriti</title>
+    <link rel="stylesheet" href="/static/files/style.css">
+    <link rel="stylesheet" href="/static/files/mediaquery.css">
+</head>
+<body>
+    <header>
+        <!-- Base part, need to use inheritance later -->
+    <nav id="desktop-nav">
+        <div class="logo"><a href="/templates/home.html"><h1>KRITI</h1></a></div>
+        <span></span><span></span><span></span><span></span><span></span> <!--For better spacing-->
+        <div class="nav_links">
+            <li><a href="/templates/events.html">Events</a></li>
+            <li><a href="/templates/schedules.html">Schedules</a></li>
+            <!-- <li><a href="">Home</a></li> -->
+            <li><a href="/templates/about_us.html">About Us</a></li>
+            <li><a href="/templates/our_team.html">Our Team</a></li>
+        </div>
+        <!-- Base part, need to use inheritance later -->
+    </nav>
+
+    <!-- Hamburger menu -->
+    <nav id="hamburger-nav">
+        <div class="logo"><a href=""><h1>KRITI</h1></a></div>
+        <span></span><span></span><span></span><span></span><span></span><span></span> <!--For better spacing-->
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-links">
+                <li><a href="" onclick="toggleMenu()">Events</a></li>
+                <li><a href="" onclick="toggleMenu()">Schedules</a></li>
+                <!-- <li><a href="" onclick="toggleMenu()">Home</a></li> -->
+                <li><a href="" onclick="toggleMenu()">About Us</a></li>
+                <li><a href="" onclick="toggleMenu()">Our Team</a></li>
+
+            </div>
+        </div>
+        </nav>
+    <!-- Hamburger menu -->
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    
+    <footer>
+        <section id="footer-section">
+            <div>
+                <h1>KRITI</h1>
+            </div>
+            <div>
+                <nav class="nav-footer">
+                    <h4>EXPLORE</h4>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Our Team</a></li>
+                </nav>
+            </div>
+            <div>
+                <nav class="nav-footer">
+                    <h4>JOIN US</h4>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">Schedules</a></li>
+                </nav>
+            </div>
+            <div>
+                <nav class="nav-footer">
+                    <h4>GET IN TOUCH</h4>
+                        <li><a href="">Mail</a></li>
+                        <li><a href="">Phone</a></li>
+                        <li><a href="">Phone</a></li>
+                </nav>
+            </div>
+            <div>
+                <nav class="nav-footer social">
+                    <h4>SOCIALS</h4>
+                    <div>
+                        <li><a href="https://www.facebook.com/ScageIIESTshibpur/" target="_blank"><img src="/static/assets/social/facebook_color.png" alt="scage facebook" width="60px" height="60px"></a></li>
+                        <li><a href="https://www.instagram.com/scage_iiests/" target="_blank"><img src="/static/assets/social/instagram_color.png" alt="scage instagram" width="60" height="60"></a></li>
+                        <li><a href="https://www.linkedin.com/company/scage" target="_blank"><img src="/static/assets/social/linkedin_color.png" alt="scage linkedin" width="60" height="60"></a></li>
+                    </div>
+                </nav>
+            </div>
+            <div>
+                <h1>IIEST</h1>
+            </div>
+        </section>
+        <p id="copy">Copyright &#169; 2024 - All Rights Reserved by SCAGE.</p>
+    </footer>
+    
+    <!-- Footer -->
+
+    <script src="/static/files/script.js"></script>
+</body>
+</html>
