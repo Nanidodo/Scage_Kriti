@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kriti</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+</head>
+<body>
+        <!-- Base part, need to use inheritance later -->
+    <nav id="desktop-nav">
+        <div class="logo"><a href=""><h1>KRITI</h1></a></div>
+        <span></span><span></span><span></span><span></span><span></span> <!--For better spacing-->
+        <div class="nav_links">
+            <li><a href="">Events</a></li>
+            <li><a href="">Schedules</a></li>
+            <!-- <li><a href="">Home</a></li> -->
+            <li><a href="">About Us</a></li>
+            <li><a href="">Our Team</a></li>
+        </div>
+        <!-- Base part, need to use inheritance later -->
+    </nav>
+    <!-- Hamburger menu -->
+    <nav id="hamburger-nav">
+        <div class="logo"><a href=""><h1>KRITI</h1></a></div>
+        <span></span><span></span><span></span><span></span><span></span><span></span> <!--For better spacing-->
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="" onclick="toggleMenu()">Events</a></li>
+                <li><a href="" onclick="toggleMenu()">Schedules</a></li>
+                <!-- <li><a href="" onclick="toggleMenu()">Home</a></li> -->
+                <li><a href="" onclick="toggleMenu()">About Us</a></li>
+                <li><a href="" onclick="toggleMenu()">Our Team</a></li>
+
+            </div>
+        </div>
+        </nav>
+    <!-- Hamburger menu -->
+    <script src="script.js"></script>
+</body>
+</html>
