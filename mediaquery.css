@@ -6,3 +6,18 @@
         display: flex;
     }
 }
+
+@media screen and (max-width:800px) {
+    #footer-section{
+        display: inline;
+        text-align: center;
+    }
+    footer section div {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    footer section div nav div{
+        padding: 0;
+        margin: 0;
+    }
+}
