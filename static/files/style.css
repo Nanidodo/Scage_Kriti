@@ -49,11 +49,13 @@ header a:hover {
 
 #hamburger-nav {
     display: none;
+    z-index: 2;
 }
 
 .hamburger-menu {
     position: relative;
     display: inline-block;
+    z-index: 2;
 }
 
 .hamburger-icon {

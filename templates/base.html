@@ -6,6 +6,7 @@
     <title>Kriti</title>
     <link rel="stylesheet" href="/static/files/style.css">
     <link rel="stylesheet" href="/static/files/mediaquery.css">
+    <link rel="stylesheet" href="/static/files/home_style.css">
 </head>
 <body>
     <header>
@@ -25,7 +26,7 @@
 
     <!-- Hamburger menu -->
     <nav id="hamburger-nav">
-        <div class="logo"><a href=""><h1>KRITI</h1></a></div>
+        <div class="logo"><a href="/templates/home.html"><h1>KRITI</h1></a></div>
         <span></span><span></span><span></span><span></span><span></span><span></span> <!--For better spacing-->
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
@@ -35,11 +36,11 @@
             </div>
 
             <div class="menu-links">
-                <li><a href="" onclick="toggleMenu()">Events</a></li>
-                <li><a href="" onclick="toggleMenu()">Schedules</a></li>
+                <li><a href="/templates/events.html" onclick="toggleMenu()">Events</a></li>
+                <li><a href="/templates/schedules.html" onclick="toggleMenu()">Schedules</a></li>
                 <!-- <li><a href="" onclick="toggleMenu()">Home</a></li> -->
-                <li><a href="" onclick="toggleMenu()">About Us</a></li>
-                <li><a href="" onclick="toggleMenu()">Our Team</a></li>
+                <li><a href="/templates/about_us.html" onclick="toggleMenu()">About Us</a></li>
+                <li><a href="/templates/our_team.html" onclick="toggleMenu()">Our Team</a></li>
 
             </div>
         </div>
@@ -62,16 +63,16 @@
             <div>
                 <nav class="nav-footer">
                     <h4>EXPLORE</h4>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Our Team</a></li>
+                        <li><a href="/templates/home.html">Home</a></li>
+                        <li><a href="/templates/about_us.html">About Us</a></li>
+                        <li><a href="/templates/our_team.html">Our Team</a></li>
                 </nav>
             </div>
             <div>
                 <nav class="nav-footer">
                     <h4>JOIN US</h4>
-                        <li><a href="">Events</a></li>
-                        <li><a href="">Schedules</a></li>
+                        <li><a href="/templates/events.html">Events</a></li>
+                        <li><a href="/templates/schedules.html">Schedules</a></li>
                 </nav>
             </div>
             <div>

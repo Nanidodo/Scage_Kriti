@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-image: url("/static/assets/content/birmingham-museums-trust-_sn71oyTN4o-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed; */
+}
+
+#parent{
+    padding-top: 7rem;
+    position: relative;
+    align-items: center;
+    margin-bottom:-1rem ;
+}
+
+#parent .text-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+
+}
+
+#parent h1{
+    font-size: 5.2rem;
+    text-transform: uppercase;
+    color: red;
+    white-space: nowrap;
+    padding: 0 6rem;
+    letter-spacing: 1px;
+    animation: move-rtl 20000ms linear infinite;
+}
+
+#parent h2{
+    font-size: 5.2rem;
+    text-transform: uppercase;
+    color: red;
+    white-space: nowrap;
+    padding: 0 6rem;
+    letter-spacing: 1px;
+    animation: move-lft 20000ms linear infinite;
+}
+
+#parent img{
+    width: 85%;
+    height: 85%;
+    border-radius: 400px; 
+}
+
+@keyframes move-rtl{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes move-lft{
+    100%{
+        transform: translateX(0);
+    }
+    0%{
+        transform: translateX(-100%);
+    }
+}
+
+#parent .parent-div{
+    position: relative;
+    
+}
+
+#parent .img-div{
+    position: absolute;
+    top: 0;
+    left: 20%;
+    height: 600px;
+    width: auto;
+
+}
+
+ #parent .img-div {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: ;
+    z-index: 1;
+} 
+
+#parent .parent-div .text-wrapper{
+    transform: rotate(-6.5deg) ;
+}
+
+.white-space{
+    padding: 5rem;
+}
+
+.cee{
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    width: 10%; /* Set the width to fill the parent container */
+    height: 10%; /* Set the height to the full viewport height */
+    background-color: #ffcc00; /* Set the background color */
+}
+
+.cce{
+    text-align: center;
+    justify-content: center;
+}
